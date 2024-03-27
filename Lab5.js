@@ -43,13 +43,31 @@ const Lab5 = (app) => {
 	  }
 	  res.json(todos)
   })
+
+  {/* Updating todo title */}
   app.get("/a5/todos/:id/title/:title", (req, res) => {
 	  const { id, title, } = req.params
-	  console.log(id, title)
 	  const todo = todos.find((t) => t.id === parseInt(id))
 	  todo.title = title
 	  res.json(todos)
   })
+
+  {/* Updating todo description */}
+  app.get("/a5/todos/:id/description/:description", (req, res) => {
+	  const { id, description, } = req.params
+	  const todo = todos.find((t) => t.id === parseInt(id))
+	  todo.description = description
+	  res.json(todos)
+  })
+
+  {/* Updating todo completed */}
+  app.get("/a5/todos/:id/completed/:completed", (req, res) => {
+	  const { id, completed, } = req.params
+	  const todo = todos.find((t) => t.id === parseInt(id))
+	  todo.completed = completed
+	  res.json(todos)
+  })
+
   app.get("/a5/todos/:id", (req, res) => {
 	const { id } = req.params
 	const todo = todos.find((t) => t.id === parseInt(id))
