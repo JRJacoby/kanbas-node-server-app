@@ -30,9 +30,9 @@ export default function UserRoutes(app) {
 
 	const updateUser = async (req, res) => {
 		const {userId} = req.params;
-		const status = await dao.updateUser(userId, req.body)
-		currentUser = await dao.findUserById(userId)
-		res.json(status)
+		const updatedUser = await dao.updateUser(userId, req.body)
+		req.session["currentUser"] = updatedUser
+		res.json(updatedUser)
 	};
 
 	const signup = async (req, res) => {
@@ -44,7 +44,6 @@ export default function UserRoutes(app) {
 		}
 		const currentUser = await dao.createUser(req.body)
 		req.session["currentUser"] = currentUser
-		console.log(`in signup: ${JSON.stringify(req.session)}`)
 		res.json(currentUser)
 	};
 
@@ -66,7 +65,6 @@ export default function UserRoutes(app) {
 	
 	const profile = async (req, res) => {
 		const currentUser = req.session["currentUser"]
-		console.log(`in profile: ${JSON.stringify(req.session)}`)
 		if (!currentUser) {
 			res.sendStatus(401)
 			return
