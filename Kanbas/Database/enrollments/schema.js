@@ -1,8 +1,8 @@
 import mongoose from "mongoose"
 
 const enrollmentSchema = new mongoose.Schema({
-	user: {type: String, required: true},
-	course: {type: String, required: true}
+	user: {type: mongoose.Schema.Types.ObjectId, ref: 'UserModel', required: true},
+	course: {type: mongoose.Schema.Types.ObjectId, ref: 'CourseModel', required: true}
 }, {collection: "enrollments"})
 
 export default enrollmentSchema
