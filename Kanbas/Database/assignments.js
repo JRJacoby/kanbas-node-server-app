@@ -1,6 +1,5 @@
 export default [
     {
-        "_id": "A101",
         "title": "Propulsion Assignment",
         "course": "RS101",
         "description": "Analyze different propulsion systems and propose optimizations.",
@@ -10,7 +9,6 @@ export default [
         "availableUntilDate": "2024-03-20"
     },
     {
-        "_id": "A102",
         "title": "Combustion Analysis",
         "course": "RS101",
         "description": "Perform a combustion analysis on a given fuel sample.",
@@ -20,7 +18,6 @@ export default [
         "availableUntilDate": "2024-03-27"
     },
     {
-        "_id": "A103",
         "title": "Nozzle Design Project",
         "course": "RS101",
         "description": "Design a nozzle for a specified engine, considering efficiency and cost.",
@@ -30,7 +27,6 @@ export default [
         "availableUntilDate": "2024-04-10"
     },
     {
-        "_id": "A201",
         "title": "Aerodynamics Quiz",
         "course": "RS102",
         "description": "Complete a quiz covering the basics of aerodynamics.",
@@ -40,7 +36,6 @@ export default [
         "availableUntilDate": "2024-02-25"
     },
     {
-        "_id": "A202",
         "title": "Flow Analysis",
         "course": "RS102",
         "description": "Analyze the flow over an airfoil at different angles of attack.",
@@ -50,7 +45,6 @@ export default [
         "availableUntilDate": "2024-03-15"
     },
     {
-        "_id": "A203",
         "title": "Heating Analysis",
         "course": "RS102",
         "description": "Assess the heating effects on an aircraft's surface during high-speed flight.",
@@ -60,7 +54,6 @@ export default [
         "availableUntilDate": "2024-03-22"
     },
     {
-        "_id": "A301",
         "title": "Structural Design Task",
         "course": "RS103",
         "description": "Design a structural component for a spacecraft, ensuring it meets safety standards.",
@@ -70,7 +63,6 @@ export default [
         "availableUntilDate": "2024-04-17"
     },
     {
-        "_id": "A302",
         "title": "Orbital Calculations",
         "course": "RS103",
         "description": "Calculate the necessary orbital parameters for a mission to Mars.",
@@ -80,7 +72,6 @@ export default [
         "availableUntilDate": "2024-05-01"
     },
     {
-        "_id": "A303",
         "title": "Systems Engineering Exam",
         "course": "RS103",
         "description": "Take a comprehensive exam covering all aspects of systems engineering.",
