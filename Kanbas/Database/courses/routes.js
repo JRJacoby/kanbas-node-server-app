@@ -7,7 +7,6 @@ export default function CourseRoutes(app) {
 	})
 
 	app.post("/api/courses", async (req, res) => {
-		console.log(`Server route: Creating course ${JSON.stringify(req.body)}`)
 		const course = await dao.createCourse(req.body)
 		res.send(course)
 	})

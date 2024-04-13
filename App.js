@@ -26,9 +26,7 @@ const sessionOptions = {
 	saveUninitialized: false
 }
 
-console.log(process.env.NODE_ENV)
 if (process.env.NODE_ENV !== "development") {
-	console.log('NODE_ENV not being correctly set to "development"')
 	sessionOptions.proxy = true;
 	sessionOptions.cookie = {
 		sameSite: "none",
