@@ -11,7 +11,6 @@ import AssignmentRoutes from './Kanbas/Database/assignments/routes.js';
 import cors from "cors"
 
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || "mongodb://localhost:27017/kanbas"
-console.log("Connecting to", CONNECTION_STRING)
 
 mongoose.connect(CONNECTION_STRING)
 
